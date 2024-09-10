@@ -1,0 +1,35 @@
+.top-menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu img {
+    width: 100px;
+}
+
+.top-menu p {
+    color: gray;
+}
+
+.top-menu > div:nth-child(3) {
+    margin-left: auto; /* This will push the last two divs to the right */
+}
+
+.top-menu > div:last-child {
+    display: flex; /* This makes the parent a flex container */
+    align-items: center; /* Vertically centers the child div */
+}
+
+.top-menu > div:last-child > div {
+    background-color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 20px;
+    width: 200px;
+    border: 0.025px solid gray;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's width */
+    margin-left: 10px; /* Optional margin */
+}

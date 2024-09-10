@@ -1,0 +1,149 @@
+
+.product-header {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center; /* Centers the two main divs horizontally */
+    align-items: center; /* Centers the two main divs vertically */
+    width: 100%;
+}
+
+.product-header h2{
+    font-size: xx-large;
+}
+
+.product-details-h2-wrapper {
+    width: 60%;
+}
+
+.product-info > div > div {
+    display: flex;
+}
+
+.product-info {
+    margin-bottom: 100px;
+}
+
+
+.product-info > div:first-child > div p {
+    font-size: x-large;
+    margin: 0;
+}
+
+.product-info > div:nth-child(2) > div p::after {
+    content: "★★★★★"; /* Unicode for stars */
+    font-size: medium; /* Adjust the size of the stars */
+    color: var(--staples-blue); /* Set the star color */
+    margin-left: 2px; /* Add spacing between the text and stars */
+    padding-top: 4px;
+    display: inline-block;
+    vertical-align: middle; /* Align the stars with the text */
+    display: block;
+  }
+
+.product-info > div:nth-child(3) > div p {
+    color: var(--staples-blue);
+    padding: 0;
+    margin: 0;
+}
+
+.product-info > div:nth-child(4) > div p {
+    padding: 0;
+    margin: 0;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+
+.product-info > div:nth-child(4) > div img {
+    width: 25px;
+}
+
+
+.product-info > div:nth-child(5) > div{
+    display: block;
+    margin: -2px;
+    padding: -2px;
+}
+
+
+.product-info > div:nth-child(5) > div p{
+   color: var(--staples-blue);
+}
+
+.product-info > div:nth-child(6){
+    display: flex;
+}
+
+.product-info > div:nth-child(6) > div:first-child {
+    border: 1px solid rgb(159, 159, 159);
+    height: 35px;
+    width: 75px;
+    padding: 8px;
+    margin-top: 27px;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center text inside */
+}
+
+.product-info > div:nth-child(6) > div:first-child p {
+    font-size: large;
+    margin: 0; /* Remove default margin to avoid offset */
+}
+
+.product-info > div:nth-child(6) > div:last-child {
+    border: 1px solid black;
+    height: 35px;
+    width: 35px;
+    padding: 8px;
+    margin-top: 27px;
+}
+
+.product-info > div:nth-child(6) > div:last-child img{
+    width: 80px;
+}
+
+
+.product-info > div:nth-child(6) .button-container a.button:any-link  {
+    background-color: rgb(188, 6, 6);
+    border-radius: 0px;
+    padding: 14px;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 500px;
+}
+
+
+.product-info > div:nth-child(8) img {
+    width: 50px;
+}
+
+.product-info > div:nth-child(8) {
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.product-info > div:nth-child(8) > div:first-child {
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.product-info > div:nth-child(8) p {
+    font-size: small;
+}
+
+.product-details-h2 {
+    width: 100%;
+    padding-left: 150px;
+}
+
+.product-details-h2 p{
+    font-size: small;
+}
+
+.bread-crumb {
+    padding-top: 10px;
+    border-bottom: 1px solid gray;
+    font-size: small;
+}
+

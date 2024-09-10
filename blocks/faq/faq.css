@@ -1,0 +1,57 @@
+.faq {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.faq > div {
+    border-bottom: 1px solid #ddd;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+
+.faq h3 {
+    background: #ffffff;
+    font-weight: 500;
+    font-size: large;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between; /* Ensures space between text and arrow */
+    align-items: center;
+    margin: 0; /* Remove default margin */
+}
+
+.faq h3::after {
+    content: '⌄'; /* The arrow */
+    transition: transform 0.1s;
+    margin-left: auto; /* Ensures it stays to the right */
+}
+
+.faq h3.active::after {
+    transform: rotate(180deg); /* Rotates the arrow when active */
+}
+
+.faq-container {
+    margin-bottom: 25px;
+}
+
+
+
+
+.faq p {
+    display: none;
+    padding: 10px;
+    background: #fff;
+    margin: 0; /* Remove default margin */
+}
+
+.faq-container h2 {
+    position: relative;
+    display: flex;
+    align-items: center; /* Center the content vertically if needed */
+    justify-content: center; /* Center the content horizontally if needed */
+    text-align: center;
+    font-weight: 300;
+}

@@ -1,0 +1,52 @@
+.cards-custom-container > .default-content-wrapper {
+    padding-bottom: 20px;
+    color: rgb(65, 65, 65);
+}
+
+.cards-custom-container > .default-content-wrapper p  {
+    font-weight: 500;
+}
+
+.cards-custom {
+    display: flex;
+}
+
+.cards-custom h5 {
+    font-size: medium;
+    font-weight: 400;
+}
+
+.cards-custom h5:after {
+    content: "★★★★★"; /* Unicode for stars */
+    font-size: medium; /* Adjust the size of the stars */
+    color: rgb(186, 186, 186); /* Set the star color */
+    margin-left: 2px; /* Add spacing between the text and stars */
+    padding-top: 4px;
+    display: inline-block;
+    vertical-align: middle; /* Align the stars with the text */
+    display: block;
+}
+
+.cards-custom p {
+    color: rgb(54, 54, 54);
+    font-size: medium;
+    font-weight: 500;
+}
+
+.cards-custom .button-container a.button:any-link  {
+    background-color: white;
+    color: rgb(188, 6, 6);
+    border-color: rgb(188, 6, 6);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: small;
+}
+
+.cards-custom .button-container a.button:any-link:hover  {
+    background-color: rgb(188, 6, 6);
+    color: white;
+    border-color: rgb(188, 6, 6);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: x-small;
+}

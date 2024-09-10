@@ -1,24 +1,92 @@
+.cards {
+  padding-top: 40px;
+}
+
 .cards > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+  grid-gap: 1px;
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
   background-color: var(--background-color);
 }
 
 .cards .cards-card-body {
   margin: 16px;
+  height: 350px;
+}
+
+.cards-card-body h2 {
+  font-size: large;
+  margin: 0;
+  position: relative;
+}
+
+.cards-card-body p {
+  font-size: small;
+}
+
+.cards-card-body h2::after {
+  content: "★★★★★"; /* Unicode for stars */
+  font-size: medium; /* Adjust the size of the stars */
+  color: var(--staples-blue); /* Set the star color */
+  margin-left: 2px; /* Add spacing between the text and stars */
+  padding-top: 4px;
+  display: inline-block;
+  vertical-align: middle; /* Align the stars with the text */
+  display: block;
+}
+.cards-card-body h4 {
+  font-size: large;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.cards-card-body h5 {
+  font-size: large;
+  color: gray;
+  margin: 0;
+  font-weight: 300;
+}
+
+.cards-card-body h6 {
+  font-size: small;
+  color: var(--staples-blue);
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
 }
 
 .cards .cards-card-image {
   line-height: 0;
+  padding: 10px;
 }
+
+.cards-card-body .button-container a.button { 
+  display: inline-block; /* Make the anchor behave like a block-level element */
+  background-color: white; /* Set the background color to yellow */
+  color: red; /* Set the font color to green */
+  padding: 10px 20px; /* Add padding to make it rectangular */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline from the text */
+  border: 1px red solid;
+  border-radius: 5px; /* Optional: Add border radius to make the corners rounded */
+  font-size: large;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+}
+
+.cards-card-body .button-container a.button:hover {
+  background-color: red; /* Optional: Change background color on hover */
+  color: white; /* Optional: Change font color on hover */
+}
+
 
 .cards > ul > li img {
   width: 100%;

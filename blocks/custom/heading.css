@@ -1,0 +1,18 @@
+.heading {
+    position: relative;
+    display: flex;
+    align-items: center; /* Center the content vertically if needed */
+    justify-content: center; /* Center the content horizontally if needed */
+    text-align: center;
+}
+
+
+.heading h1 {
+    font-weight: 500;
+}
+
+
+.heading h2 {
+    font-weight: 400;
+    font-size: x-large;
+}

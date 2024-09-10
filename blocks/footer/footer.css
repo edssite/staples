@@ -79,7 +79,7 @@ footer .default-content-wrapper {
   padding-left: 50px;
 }
 .footer-actions a {
-  color: #198294;
+  color: var(--staples-blue);
 }
 
 .footer-actions ul {

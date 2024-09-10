@@ -1,20 +1,98 @@
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  padding: 2rem;
+  background-color: white;
+  font-size: var(--body-font-size-s);
 }
 
-footer .footer > div {
-  margin: auto;
+footer .footer {
   max-width: 1200px;
-  padding: 40px 24px 24px;
+  margin: auto;
 }
 
 footer .footer p {
   margin: 0;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+footer .default-content-wrapper {
+  h2 {
+    font-size: large;
   }
+
+  p {
+    font-size: small;
+  }
+
+  h4 {
+    font-size: small;
+    color: gray;
+  }
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px; /* Adjust the gap between flex items */
+  border-top: 1px solid lightgrey; /* Add a thin gray line above */
+  padding-top: 25px;
+}
+
+
+.footer-links img {
+  width: 2%;
+  height: 2%;
+}
+
+.footer-links p {
+  font-size: small;
+  color: black;
+}
+
+.footer-links a {
+  color: black;
+}
+
+.footer-links {
+}
+
+.footer-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 3px; /* Adjust the gap between flex items */
+  border-top: 1px solid lightgrey; /* Add a thin gray line above */
+  border-bottom: 0.5px solid lightgrey; /* Add a thin gray line below */
+  padding-top: 10px; /* Add some padding to make the line more visible */
+  padding-bottom: 10px; /* Add some padding to make the line more visible */
+}
+
+
+.footer-bottom-banner-wrapper {
+  border-bottom: 1px solid gray;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.footer-bottom-banner {
+  display: flex;
+  gap: 500px;
+}
+
+.footer-bottom-banner > div:last-child > div {
+  padding-left: 50px;
+}
+.footer-actions a {
+  color: #198294;
+}
+
+.footer-actions ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.footer-actions > div > div > h2 {
+  font-size: large;
+  width: 100%
+}
+
+.footer-actions > div > div > ul > li > a {
+  font-size: small;
 }

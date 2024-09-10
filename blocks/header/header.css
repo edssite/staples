@@ -263,6 +263,33 @@ header nav .nav-sections ul > li > ul > li {
 }
 
 /* tools */
+
 header nav .nav-tools {
-  grid-area: tools;
+  display: flex;
+  align-items: center;
+  position: relative; /* Make this element a positioning context for its children */
+  justify-self: end; /* Align it to the right */
+  margin-right: 110px;
+}
+
+/* Styles for the input field */
+header nav .nav-tools .nav-search-input {
+  padding: 10px 40px 10px 12px; /* Add extra padding on the right for the icon */
+  font-size: 14px;
+  border: 5px solid #d3d3d3;
+  border-radius: 2px;
+  flex: 1;
+  width: 600px;
+  background-color: #f9f9f9;
+}
+
+header nav .nav-tools > .default-content-wrapper {
+  display: flex;
+}
+
+
+header nav .nav-tools > .default-content-wrapper img {
+  width: 30px;
+  height: 100%;
+  padding-left: 40px;
 }
